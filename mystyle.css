@@ -1,0 +1,268 @@
+body {
+    background-image: url(../images/STC_background_op.png);
+    background-size: cover;
+}
+
+li a {
+    color: white;
+}
+
+ul li a {
+    color: white;
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    font-size: 50pt;
+}
+
+h2 a {
+    font-size: 28pt;
+}
+
+h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 25pt;
+    
+}
+
+img {
+    border-radius: 1em;
+}
+
+p {
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 15pt;
+}
+
+#site_logo {
+    padding-left: 2em;
+    width: 780px;
+    height: 108px;
+}
+
+.container_top {
+    width: auto;
+    display: flex;
+    padding-left:2em ;
+    padding-right: 2em;
+}
+
+.container {
+/*  border: black solid 1pt; */
+  align-items: center;
+    
+}
+
+#header div {
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav {
+    background-color: black;
+    flex: 1 1 15%;
+    padding: 2pt;
+    border-right: white solid 1pt;
+    flex-wrap: nowrap;
+    order: 0;
+    text-align: left;
+}
+
+#grid li a {
+    font-size: 8pt;
+    color: black;
+}
+
+li, a  {
+
+    line-height: 20pt;
+    list-style: none;
+    font-size: 12pt;
+}
+
+
+#nav ul li {
+    text-align: left;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    color: lime;
+}
+
+#nav ul li ul {
+    float: left;
+    display: none;
+    z-index: 1000;
+}
+
+#nav ul li:hover ul{
+    margin-left: 50px;
+    display: block;
+    position: absolute;
+    border: solid lime 1pt;
+    background-color: grey;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+#nav ul li ul li a {
+    text-align: right;
+    font-size: smaller;
+}
+
+#header {
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    padding: 10pt;
+    flex: 1 1 85%;
+    border: black solid 1pt;
+    order: 1;
+}
+.row {
+    padding: 4em;
+    flex-direction: row;
+}
+
+.row li a {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    background-color: white;    
+    color: black;
+    border-radius: 5pt;
+}
+
+.row li a:hover {
+    text-decoration: none;
+    border: none;
+    background-color: lime;
+    color: black;
+}
+
+.row li {
+   /* padding-left: 1em;
+    padding-right: 1em;*/
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+.rowtwo {
+    display: flex;
+    justify-content: flex-end;
+}
+.rowtwo a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.rowtwo a img {
+    width: 40px;
+    height: 40px;
+    border-radius: .5em;
+    background-color: white;
+}
+
+.rowtwo a img:hover {
+    width: 40px;
+    height: 40px;
+    background-color: lime;
+}
+
+#footer {
+    width: 1140px;
+    background-color: dimgray;
+    display: flex;
+
+}
+
+
+
+#footer p {
+    padding: 2em;
+    height: 50px;
+    font-size: 8pt;
+    color: black;
+}
+
+#content {
+    align-content: center;
+    align-items: center;
+    padding: 3em;
+    background-color: mintcream;
+    
+    order: 1;
+}
+
+#content img {
+    width: auto;
+    height: auto;
+}
+
+.container_bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+#content div {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#grid_nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#grid_top {
+
+    display: grid;
+    grid: repeat(1,50px) / repeat(7,1fr);
+    column-gap: 10px;
+}
+
+#grid {
+    display:grid;
+    grid: repeat(5,150px) / repeat(7,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#grid li{
+    font-style: normal;
+    font-size: 10pt;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+#contact img {
+    height: 500px;
+    width: 500px;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contact button:hover {
+    background-color: lime;
+    scale: 110%;
+}
+
